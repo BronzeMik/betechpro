@@ -4,6 +4,7 @@ import { useState } from 'react';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
+import Image from 'next/image';
 
 
 export default function Header() {
@@ -15,7 +16,7 @@ export default function Header() {
         {/* Logo */}
         <div className="text-2xl font-bold text-green-600">
           <Link href="/">
-            BeTech
+            <Image src="/images/brand/BeTech-logo.png" alt="BeTech" width={200} height={40} />
           </Link>
         </div>
 
