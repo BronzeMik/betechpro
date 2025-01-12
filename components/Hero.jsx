@@ -27,7 +27,7 @@ export default function Hero() {
     }, [])
   return (
     <section className="relative bg-gradient-to-b from-gray-800 to-[#3C3E4F] text-white pt-52 pb-40">
-      <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center">
+      <div className="container mx-auto px-6 flex flex-col-reverse md:flex-row items-center mt-20">
         {/* Left Content */}
         <div className="md:w-full text-center md:text-center mb-12">
           <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 gradient gradient-title uppercase">
@@ -62,7 +62,7 @@ export default function Hero() {
               alt="IT Solutions"
               width={800}
               height={400}
-              className="rounded-lg shadow-2xl mx-auto"
+              className="mx-auto"
             />
           </div>
         </div>

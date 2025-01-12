@@ -44,17 +44,17 @@ export default function Header() {
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/services" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-green-600`}>
+              <Link href="/services" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-[#98ec07]`}>
                 Services
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/about" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-green-600`}>
+              <Link href="/about" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-[#98ec07]`}>
                 About
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/contact" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-green-600`}>
+              <Link href="/contact" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-[#98ec07]`}>
                 Contact
               </Link>
             </NavigationMenuItem>
