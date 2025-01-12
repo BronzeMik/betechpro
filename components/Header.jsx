@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Button } from "@/components/ui/button";
 import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu";
@@ -10,13 +10,33 @@ import Image from 'next/image';
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+    
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 120) {
+          setIsScrolled(true);
+        } else {
+          setIsScrolled(false);
+        }
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+
   return (
-    <header className="bg-white shadow-md sticky top-0 z-50">
+    <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ease-in-out 
+      ${isScrolled ? 'h-16- bg-white shadow-lg' : 'h-20 bg-transparent'}
+    `}>
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
         <div className="text-2xl font-bold text-green-600">
           <Link href="/">
-            <Image src="/images/brand/BeTech-logo.png" alt="BeTech" width={200} height={40} />
+            <Image src="/BeTech_logo.svg" alt="BeTech" width={isScrolled ? 100 : 200} height={isScrolled ? 10 : 80} />
           </Link>
         </div>
 
@@ -24,17 +44,17 @@ export default function Header() {
         <NavigationMenu className="hidden md:flex">
           <NavigationMenuList>
             <NavigationMenuItem>
-              <Link href="/services" className="px-4 py-2 text-gray-600 hover:text-green-600">
+              <Link href="/services" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-green-600`}>
                 Services
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/about" className="px-4 py-2 text-gray-600 hover:text-green-600">
+              <Link href="/about" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-green-600`}>
                 About
               </Link>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <Link href="/contact" className="px-4 py-2 text-gray-600 hover:text-green-600">
+              <Link href="/contact" className={`px-4 py-2 text-gray-600 ${isScrolled ? 'md:text-gray-700' : 'md:text-slate-50'} hover:text-green-600`}>
                 Contact
               </Link>
             </NavigationMenuItem>
