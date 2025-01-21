@@ -1,4 +1,4 @@
-import { FaLaptopCode, FaCloud, FaShieldAlt, FaHeadset } from 'react-icons/fa';
+import { FaLaptopCode, FaCloud, FaShieldAlt, FaHeadset } from "react-icons/fa";
 
 export default function OurServices() {
   const services = [
@@ -36,7 +36,7 @@ export default function OurServices() {
           {services.map((service, index) => (
             <div
               key={index}
-              className="p-6 bg-white rounded-lg shadow-lg text-center hover:shadow-xl transition-shadow duration-300"
+              className="p-6 bg-white rounded-lg shadow-md text-center transition-all duration-300 transform hover:shadow-2xl hover:scale-105"
             >
               {service.icon}
               <h3 className="text-2xl font-semibold mb-4">{service.title}</h3>

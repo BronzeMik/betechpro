@@ -24,7 +24,7 @@ export default function Testimonials() {
     ];
   
     return (
-      <section className="py-20 bg-gray-100">
+      <section className="py-20 bg-[#3C3E4F] bg-opacity-10">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-center mb-12">
             What Our Clients Say
@@ -42,8 +42,8 @@ export default function Testimonials() {
                     className="w-16 h-16 rounded-full object-cover mr-4"
                   />
                   <div>
-                    <h4 className="text-xl font-semibold">{testimonial.name}</h4>
-                    <p className="text-gray-500">{testimonial.position}</p>
+                    <h4 className="text-xl font-semibold text-[#3C3E4F]">{testimonial.name}</h4>
+                    <p className="text-[gray-500]">{testimonial.position}</p>
                   </div>
                 </div>
                 <p className="text-gray-600 italic">"{testimonial.feedback}"</p>

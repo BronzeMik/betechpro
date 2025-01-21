@@ -23,15 +23,20 @@ export default function WhyChooseUs() {
     ];
   
     return (
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white relative bg-cover bg-center"
+      style={{ backgroundImage: `url('/why-choose-us-bg.jpg')` }}
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-[#98ec07] to-[#46B3E6] rounded-lg"></div>
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">
+          <h2 className="text-5xl font-bold text-center mb-12 text-black relative z-10">
             Why Choose BeTech?
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 relative">
             {reasons.map((reason, index) => (
-              <div key={index} className="flex items-start space-x-6">
-                <div className="w-12 h-12 flex items-center justify-center bg-green-500 text-white rounded-full text-xl font-bold">
+              <div key={index} className="flex items-start space-x-6 border-2 border-slate-100 shadow-md px-3 p-12 rounded-lg bg-white"
+              >
+                <div className="w-12 h-12 flex items-center justify-center bg-[#3C3E4F] text-white text-xl font-bold"             
+                >
                   {index + 1}
                 </div>
                 <div>
