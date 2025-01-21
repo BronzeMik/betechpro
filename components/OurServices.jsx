@@ -6,37 +6,37 @@ export default function OurServices() {
           title: "Web Development",
           description:
             "We build custom websites tailored to your needs, using the latest technologies to ensure performance and scalability.",
-          icon: <FaDesktop className="text-4xl text-blue-600" />,
+          icon: <FaDesktop className="text-4xl text-[#46B3E6]" />,
         },
         {
           title: "Mobile App Development",
           description:
             "Our team develops native and cross-platform mobile apps for Android and iOS to engage your audience on the go.",
-          icon: <FaMobileAlt className="text-4xl text-blue-600" />,
+          icon: <FaMobileAlt className="text-4xl text-[#46B3E6]" />,
         },
         {
           title: "Branding & Design",
           description:
             "We create memorable brands with unique logos, visual identities, and designs that resonate with your audience.",
-          icon: <FaPaintBrush className="text-4xl text-blue-600" />,
+          icon: <FaPaintBrush className="text-4xl text-[#46B3E6]" />,
         },
         {
           title: "Cloud Solutions",
           description:
             "We provide cloud services for better scalability, security, and cost savings to help your business grow.",
-          icon: <FaCloud className="text-4xl text-blue-600" />,
+          icon: <FaCloud className="text-4xl text-[#46B3E6]" />,
         },
         {
           title: "SEO & Digital Marketing",
           description:
             "We improve your search engine ranking and implement targeted marketing strategies to increase your visibility online.",
-          icon: <FaSearch className="text-4xl text-blue-600" />,
+          icon: <FaSearch className="text-4xl text-[#46B3E6]" />,
         },
         {
           title: "IT Support & Consulting",
           description:
             "We offer reliable IT support and consulting services to optimize your systems and ensure smooth operations.",
-          icon: <FaHeadset className="text-4xl text-blue-600" />,
+          icon: <FaHeadset className="text-4xl text-[#46B3E6]" />,
         },
       ];
   
@@ -59,7 +59,7 @@ export default function OurServices() {
                 <div className="text-center">
                   <a
                     href="#contact"
-                    className="inline-block px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors duration-300"
+                    className="inline-block px-6 py-3 bg-[#3C3E4F] text-white font-semibold rounded-lg hover:bg-[#98ec07] transition-colors duration-300"
                   >
                     Get in Touch
                   </a>

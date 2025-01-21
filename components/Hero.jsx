@@ -58,11 +58,11 @@ export default function Hero() {
         <div className="hero-image-wrapper">
           <div ref={imageRef} className="hero-image mb-16 md:mb-0">
             <Image
-              src="/images/home/hero-img.svg"
+              src="/images/home/hero-img.gif"
               alt="IT Solutions"
               width={800}
               height={400}
-              className="mx-auto"
+              className="mx-auto mt-[-100px] md:mt-[-200px]"
             />
           </div>
         </div>

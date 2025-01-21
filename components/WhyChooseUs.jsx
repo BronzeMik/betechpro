@@ -24,9 +24,10 @@ export default function WhyChooseUs() {
   
     return (
       <section className="py-20 bg-white relative bg-cover bg-center"
-      style={{ backgroundImage: `url('/why-choose-us-bg.jpg')` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#98ec07] to-[#46B3E6] rounded-lg"></div>
+        <div className="absolute inset-0 bg-cover bg-center rounded-lg"
+        style={{backgroundImage: `url('/why-choose-us-bg.gif')`}}
+        ></div>
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-12 text-black relative z-10">
             Why Choose BeTech?
