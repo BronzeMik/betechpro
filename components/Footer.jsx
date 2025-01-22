@@ -1,5 +1,6 @@
-import Link from 'next/link';
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -9,8 +10,17 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
           {/* Logo and Slogan */}
           <div className="mb-6 md:mb-0">
-            <h1 className="text-2xl font-bold text-green-500">BeTech</h1>
-            <p className="mt-2 text-sm">Empowering Businesses with Smart IT Solutions</p>
+            <Link href="/">
+              <Image
+                src="/BeTech_logo.svg"
+                alt="BeTech"
+                width={200}
+                height={80}
+              />
+            </Link>
+            <p className="mt-2 text-sm">
+              Be Creative. Be Innovative. Be Tech Pro.
+            </p>
           </div>
 
           {/* Quick Links */}
@@ -38,8 +48,21 @@ export default function Footer() {
           {/* Contact Information */}
           <div>
             <h2 className="font-semibold text-gray-100 mb-3">Contact Us</h2>
-            <p>Email: <a href="mailto:contact@betechpro.com" className="hover:text-green-500">contact@betechpro.com</a></p>
-            <p>Phone: <a href="tel:+2164655346" className="hover:text-green-500">+1 216 465 5346</a></p>
+            <p>
+              Email:{" "}
+              <a
+                href="mailto:contact@betechpro.com"
+                className="hover:text-green-500"
+              >
+                contact@betechpro.com
+              </a>
+            </p>
+            <p>
+              Phone:{" "}
+              <a href="tel:+2164655346" className="hover:text-green-500">
+                +1 216 465 5346
+              </a>
+            </p>
             <Button variant="outline" className="mt-4">
               Get a Quote
             </Button>

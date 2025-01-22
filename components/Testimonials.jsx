@@ -24,8 +24,11 @@ export default function Testimonials() {
     ];
   
     return (
-      <section className="py-20 bg-[#3C3E4F] bg-opacity-10">
-        <div className="container mx-auto px-4">
+      <section className="py-20 bg-[#fefefe] relative bg-cover bg-center ">
+        <div className="absolute inset-0 bg-cover bg-center rounded-lg"
+        style={{backgroundImage: `url('/why-choose-us-bg-2.svg')`}}
+        ></div>
+        <div className="container mx-auto px-4 relative z-10">
           <h2 className="text-4xl font-bold text-center mb-12">
             What Our Clients Say
           </h2>

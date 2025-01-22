@@ -23,10 +23,10 @@ export default function WhyChooseUs() {
     ];
   
     return (
-      <section className="py-20 bg-white relative bg-cover bg-center"
+      <section className="py-20 bg-[#fefefe] relative bg-cover bg-center"
       >
         <div className="absolute inset-0 bg-cover bg-center rounded-lg"
-        style={{backgroundImage: `url('/why-choose-us-bg.gif')`}}
+        style={{backgroundImage: `url('/why-choose-us-bg.svg')`}}
         ></div>
         <div className="container mx-auto px-4">
           <h2 className="text-5xl font-bold text-center mb-12 text-black relative z-10">
