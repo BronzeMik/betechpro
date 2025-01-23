@@ -1,13 +1,22 @@
+import Image from "next/image";
 import { FaLaptopCode, FaUsers, FaHandshake, FaLightbulb } from "react-icons/fa";
 
 const page = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-[#3C3E4F] text-white text-center pb-40 pt-60">
+      <section className="flex flex-col md:flex-row-reverse justify-center items-center bg-[#30444a] text-white text-center pb-40 pt-44">
+        <div>
+          <Image
+            src="/about_us_img.gif"
+            alt="Hero Background"
+            width={500}
+            height={200}
+          />
+        </div>
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4">Welcome to BeTech</h1>
-          <p className="text-xl mb-8">
+          <h1 className="text-5xl font-bold mb-4 gradient gradient-title">Welcome to BeTech</h1>
+          <p className="text-xl mb-8 ">
             We empower businesses through technology, providing innovative solutions to help you grow.
           </p>
           <a
